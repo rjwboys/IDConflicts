@@ -1,6 +1,6 @@
 @echo on
 REM Sets the Directory base to your desktop
-Set DirBase="%HOMEPATH%\Desktop"
+Set DirBase="%USERPROFILE%\Desktop
 REM sets varYYYY to the year
 SET varYYYY=%DATE:~10,4%
 REM Sets varMM to the Month
@@ -9,7 +9,7 @@ REM Sets varDD to the Day
 SET varDD=%DATE:~7,2%
 REM set hr=%TIME:~0,2%
 REM Sets the Variable for Conflicts to YourDesktop\conflicts\Year\Month\Day\
-SET Conflicts=%DirBase%\conflicts\%varYYYY%\%varMM%\%varDD%
+SET Conflicts=%DirBase%\conflicts\%varYYYY%\%varMM%\%varDD%\ahcraft
 REM Checks if the DIR is already made
 IF exist %Conflicts% ( echo Conflicts exists ) ELSE ( mkdir %Conflicts% && echo Conflicts created)
 REM Sets the variable for str2 to CONFLICTS @
